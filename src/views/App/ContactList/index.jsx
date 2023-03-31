@@ -71,9 +71,7 @@ const ContactList = ({ favorites }) => {
           <Loader isLoading={isLoading} />
         ) : (
           <>
-            {!favorites && filteredContacts.length > 0 && (
-              <AddCard onClick={() => setAddModalOpen(true)} />
-            )}
+            {!favorites && <AddCard onClick={() => setAddModalOpen(true)} />}
 
             <AnimatePresence>
               {addModalOpen && (
@@ -100,7 +98,7 @@ const ContactList = ({ favorites }) => {
             ))}
 
             {!favorites && contacts.length === 0 && (
-              <p className='message'>
+              <p className='message all-page'>
                 {firstLoad ? 'Loading...' : 'No Contacts'}
               </p>
             )}
@@ -108,7 +106,7 @@ const ContactList = ({ favorites }) => {
             {!favorites &&
               filteredContacts.length === 0 &&
               contacts.length !== 0 && (
-                <p className='message'>No Matching Contacts</p>
+                <p className='message all-page'>No Matching Contacts</p>
               )}
 
             <ToTopBtn />

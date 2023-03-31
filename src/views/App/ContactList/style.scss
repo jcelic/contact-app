@@ -20,7 +20,11 @@
 
 @media (max-width: 980px) {
   .message {
-    top: 65%;
+    top: 35%;
     line-height: 1;
+
+    &.all-page {
+      top: 70%;
+    }
   }
 }

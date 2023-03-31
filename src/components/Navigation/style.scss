@@ -1,0 +1,22 @@
+@import 'styles/variables.scss';
+
+.navigation {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  a {
+    color: #fff;
+    font-size: 20px;
+    padding: 3px 10px;
+    border: 2px solid $color-bg-secondary;
+    border-radius: 12px;
+
+    &.active {
+      border: 2px solid $color-bg-secondary;
+      background: $color-bg-secondary;
+      color: #000;
+    }
+  }
+}

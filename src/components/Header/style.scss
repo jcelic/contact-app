@@ -1,0 +1,27 @@
+@import 'styles/variables.scss';
+
+header {
+  background: $color-bg-secondary;
+  height: 70px;
+  position: relative;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+  }
+}
+
+.back-btn {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  cursor: pointer;
+  transition: all $transition-default;
+
+  &:hover {
+    left: 26px;
+  }
+}

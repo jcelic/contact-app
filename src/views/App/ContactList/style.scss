@@ -1,0 +1,26 @@
+@import 'styles/variables.scss';
+
+.grid {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.message {
+  color: $color-font-secondary;
+  font-size: 50px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .message {
+    top: 65%;
+    line-height: 1;
+  }
+}

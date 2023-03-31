@@ -1,0 +1,59 @@
+.card {
+  position: relative;
+  height: 240px;
+  padding: 5px 20px 20px;
+  background: lightblue;
+  color: #000;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &__img {
+    width: 90px;
+    height: 90px;
+    background: #333;
+    border-radius: 20px;
+    font-size: 50px;
+    margin-bottom: 8px;
+    color: lightblue;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  }
+}
+
+.card p {
+  gap: 10px;
+}
+
+.card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0px;
+  background: rgb(88, 199, 236);
+  width: 100%;
+  border-radius: 0 0px 25px 25px;
+  opacity: 0;
+  padding: 5px 35px;
+  transition: all 0.3s;
+}
+
+.card:hover .card__actions {
+  opacity: 1;
+}
+
+.card .trash-icon {
+  font-size: 18px;
+  color: #444;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #000;
+  }
+}

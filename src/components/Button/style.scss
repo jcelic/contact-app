@@ -1,0 +1,30 @@
+@import 'styles/variables.scss';
+
+.btn {
+  border: none;
+  padding: 8px 25px;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all $transition-default;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &--primary {
+    background: $color-bg-secondary;
+
+    &:hover {
+      background: rgb(88, 199, 236);
+    }
+  }
+
+  &--secondary {
+    background: rgb(88, 199, 236);
+
+    &:hover {
+      background: #000;
+      color: rgb(88, 199, 236);
+    }
+  }
+}

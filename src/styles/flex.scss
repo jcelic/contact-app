@@ -1,0 +1,32 @@
+$positions: (
+  center: center,
+  start: flex-start,
+  end: flex-end,
+  around: space-around,
+  between: space-between,
+  evenly: space-evenly,
+);
+
+@each $name, $value in $positions {
+  .justify-#{$name} {
+    justify-content: $value;
+  }
+
+  .align-#{$name} {
+    align-items: $value;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

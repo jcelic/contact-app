@@ -1,0 +1,21 @@
+@import 'styles/variables.scss';
+
+.search-field {
+  margin: 10px 0;
+  width: 240px;
+  border-bottom: 2px solid $color-bg-secondary;
+
+  &__icon {
+    color: $color-bg-secondary;
+    font-size: 17px;
+  }
+
+  &__input {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 3px 5px;
+    color: $color-font-secondary;
+  }
+}

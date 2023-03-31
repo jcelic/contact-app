@@ -1,0 +1,66 @@
+.details {
+  padding-top: 134px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+
+    img {
+      width: 140px;
+      height: 140px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  }
+
+  &__icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    color: lightblue;
+    background: #333;
+    padding: 15px;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 20px;
+  }
+
+  .heart-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: gray;
+    margin-left: auto;
+  }
+}
+
+.details__info {
+  background: #add8e6;
+  padding: 50px 20px 20px 20px;
+  width: 280px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  & > div:not(:last-of-type) {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 5px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}

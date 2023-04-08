@@ -100,7 +100,6 @@ const Form = ({ onClose, editContact }) => {
       isFavorite: editContact.isFavorite,
     };
 
-    setIsLoading(true);
     const updatedContact = await updateContact(editContact.id, formData);
     const updatedContacts = contacts.map(contact =>
       contact.id === editContact.id ? updatedContact : contact
@@ -109,7 +108,6 @@ const Form = ({ onClose, editContact }) => {
     setContacts(updatedContacts);
     setSingleContact(updatedContact);
     onClose();
-    setIsLoading(false);
   };
 
   return (

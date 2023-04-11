@@ -1,5 +1,5 @@
 import './style.scss';
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import ContactsContext from 'context/contacts.context';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -42,7 +42,9 @@ const ViewContact = () => {
     setSingleContact(contact);
   };
 
-  fetchContact();
+  useEffect(() => {
+    fetchContact();
+  }, []);
 
   // DELETE CONTACT
   const deleteHandler = async id => {
